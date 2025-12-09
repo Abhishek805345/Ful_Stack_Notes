@@ -1,0 +1,276 @@
+body{
+                background-color:	#FAF3DD;
+                margin:0%;
+                padding:0%;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                transition: all 0.3s ease;
+                 animation-name:pageload;
+                animation-duration: 1s;
+            }
+            @keyframes pageload{
+                from{
+                    opacity: 0;
+                    filter: blur(10px);
+                }
+                to{
+                    opacity: 1;
+                    filter:blur(0px);
+                }
+            }
+            a{
+                text-decoration-line: none;
+                color:black;
+            
+            }
+           
+               .navi{ 
+                 
+                 border:1px solid #FFA69E;
+                background-color: #FFA69E;               
+                color:white;
+            }
+            .outer{
+                display:flex;
+                justify-content: space-between;
+            }
+           
+           .logo{
+               padding:10px;
+                font-weight: bold; 
+                background-color: white;  
+                margin: 20px;       
+                 border:1px solid white;
+                border-radius: 0.4rem 
+           }
+           .logo:hover{
+                transform: scale(1.1);
+                transition: all 0.3s ease;
+                background-color: #ffa69eaa;
+                border-color: #ffa69eaa;
+           }
+          
+            .lis{
+                list-style-type:none;
+                
+                 padding-right: 20px;
+                display:flex;
+                gap:30px;
+                color:white;
+               
+                
+            }
+            .lis>li{
+                font-weight: bold;
+                padding:2px;
+                border:1px solid white;
+                border-radius: 0.4rem;
+                background-color: white;
+                max-height: fit-content;
+            }
+            .lis>li:hover{
+                transform: scale(1.1);
+                transition: all 0.3s ease;
+                background-color: #ffa69eaa;
+                border-color: #ffa69eaa;
+            }
+            h1{
+                color:white;
+                border:2px solid #FFA69E;
+                border-radius: 0.9rem;
+                margin-left: 10px;
+                margin-right: 10px;
+                padding:5px;
+                text-align: center;
+                background-color: #FFA69E;
+                margin-bottom: 10px;
+                font-family: "Anton", sans-serif;
+            }
+.hero{
+    border:1px solid #FFA69E;
+    border-radius: 0.8rem;
+    margin:10px;
+    padding:10px;
+    color:white;
+    background-color: #FFA69E;
+    text-align: center;
+    text-shadow: 1.2px 1.2px 4px black;
+}
+.hero>button{
+    position:fixed;
+    bottom: 20px;
+    right:20px;
+    border:1px solid black;
+    box-shadow: 1.2px 1.2px 4px black;
+    border-radius: 0.8rem;
+    padding:4px;
+    animation:col;
+    animation-timing-function: linear;
+    animation-duration:2s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate-reverse ;
+    transition:all 0.3s ease-in-out;
+}
+.hero>button:hover{
+    transform:translateY(-2px);
+}
+@keyframes col{
+    from {
+        background-color: #FFA69E;
+    }
+    to{
+        background-color: white;
+    }
+    
+}
+#js1{
+    border:1px solid #FFA69E;
+    border-radius: 0.8rem;
+    margin:10px;
+    padding:10px;
+    background-color: #FFA69E;
+    
+}
+#datatypes{
+    border:1px solid #FFA69E;
+    border-radius: 0.8rem;
+    margin:10px;
+    padding:10px;
+    background-color: #FFA69E;
+}
+.highlight{
+    background-color: red;
+    animation-name: glow;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.important{
+    border-radius: 0.8rem;
+    border:4px ;
+    animation-name: lessglow;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes glow{
+    from{
+        background-color: aqua;
+    }
+    to {
+        background-color: red;
+    }
+}
+@keyframes lessglow{
+    from{
+       border-style: solid;
+        border-color: rgb(30, 207, 219);
+    }
+    to{
+        border-style: dotted;
+        border-color: rgb(189, 78, 78);
+    }
+}
+#operator ,#conditional, #switch ,#loop,#array,#fxn,#Hell,#promise,#dom ,#domexample,#domevent,#listnerex,#faqs{
+    border:1px solid #FFA69E;
+    border-radius: 0.8rem;
+    margin:10px;
+    padding:10px;
+    padding-bottom: 20px;
+    background-color: #FFA69E;
+}
+.domcon{
+    display:flex;
+    justify-content: center;
+    border:2px solid black;
+    box-shadow: 1.2px 1.2px 4px black;
+    padding:10px;
+}
+.dombox{
+    height:100px;
+    width:100px;
+    border:2px solid red;
+    padding:10px;
+}
+.animatn{
+    animation:any 1s ease-in-out ;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes any{
+    0%{
+        transform:rotate(0deg);
+    }
+    
+    100%{
+        transform:rotate(360deg);
+    }
+}
+#domevent>h3{
+    cursor: pointer;
+}
+.jsaddedclass{
+    background-color: #ffffff50;
+    border:1px solid #ffffff80;
+    backdrop-filter:blur(4px);
+    border-radius:0.8rem;
+    box-shadow: 2px 2px 4px black;
+    color:white;
+    padding:10px;
+}
+#listnerbutton{
+    border:2px solid #ffffff50;
+    border-radius: 0.8rem;
+    background-color: #ffffff10;
+    cursor:pointer;
+    padding:4px;
+    margin-left:50%;
+}
+.detail{
+    border-radius: 0.8rem;
+    transition:all 0.3s ease-in-out;
+    animation:slide 0.3s linear;
+    animation-fill-mode:forwards;
+}
+@keyframes slide {
+    from{
+        transform: translate(0px,50px);
+    }
+    to{
+        transform: translate(50px,-50px);
+    }
+}
+.question{
+    position: relative;
+    padding:0 10px;
+    margin:10px;
+    border:1px solid black;
+    border-radius: 0.8rem;
+    box-shadow: 2px 2px 4px black;
+    background-color: #ffffff7c;
+   transition:all 0.3s ease-in-out;
+}
+
+.hide1,.hide2,.hide3{
+    max-height: 0px;
+    overflow:hidden;
+    animation:slidedown 0.3s ease-in-out;
+   transition:all 0.3s ease-in-out;
+
+}
+.unhide1,.unhide2,.unhide3{
+    max-height: 200px;
+   transition:all 0.3s ease-in-out;
+
+}
+
+#symbol,#symbol2,#symbol3{
+    Position:absolute;
+    right:15px;
+    top:25px;
+    transition:all 0.3s ease-in-out;
+}
+.symbol,.symbol2,.symbol3{
+    transform:rotate(180deg);
+}

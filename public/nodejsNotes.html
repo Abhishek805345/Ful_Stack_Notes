@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Node js notes</title>
+  <link rel="stylesheet" href="nodejsNotes.css">
+  <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+        <nav class="navi">
+            <div class="outer"> 
+                <div class="logo"><a href="">Navigation bar</a></div>
+                <ul class="lis">
+                    <li><a href="index.html">Home</a></li>
+                     <li><a href="news.html">News</a></li>
+                      <li><a href="index.html">portfolio</a></li>
+                       <li><a href="NewBegningjsnotes.html">Notes</a></li>
+                </ul> 
+            </div> 
+        </nav>
+        <div id="Hero">
+            <h2>Node-JS NOTES</h2>
+            <div id="placer" >
+            <button id="unhider" class="hightlight">📘</button><br>
+            <button id="sql"><a href="#SQL">SQL</a> </button><br>
+            <button id="mongo"><a href="#mongodb">MONGO DB</a> </button>
+             <div id="hided" class="hided">
+                <h2>Packages installed during this learning:- </h2>
+                <ul>
+                    <li>Npm</li>
+                    <li>Nodemon</li>
+                    <li>Express</li>
+                    <li>Body-parser</li>
+                    <li>Ejs</li>
+                    <li>MYSQL community server</li>
+                    <li>MYSQL workbench</li>
+                    <li>terminal:-mysql2</li>
+                    <li>Create mongo atlas account</li>
+                    <li>install mongodb in vs</li>
+                    <li>Mongo Compass</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        <div id="example">
+            <h2>Writing data to file using Node JS:- </h2>
+            <image src="Images/Node JS/data entry.png" height="200px"></image>
+        </div>
+        <div id="repl">
+            <h2> what is repl:- </h2><h3>Node  will read,evaluate,print and then loop .It is the sequence of working of node  which is denoted as Repl.</h3>
+            <image src="Images/Node JS/repl.png" height="200px"></image>
+        </div>
+        <div id="server">
+            <h2>Server info:- </h2>
+            <image src="Images/Node JS/info.png" height="200px" ></image>
+            <image src="Images/Node JS/dns.png" height="200px"></image>
+            <image src="Images/Node JS/dns type.png" height="200px"></image>
+            <image src="Images/Node JS/webworking.png" height="200px"></image>
+            <image src="Images/Node JS/protocols.png" height="200px"></image>
+            <image src="Images/Node JS/moduler.png" height="200px"></image>
+            <image src="Images/Node JS/core module.png" height="200px"></image>
+            <label for="requre" class="hightlight">require keywork:- </label>
+            <image src="Images/Node JS/requre keyword.png" height="200px" id="require"></image>
+        </div>
+        <div id="servercode">
+            <h2>Creating a server:- </h2>
+            <h3>Node js is single threded, means single request at a time .</h3>
+            <image src="Images/Node JS/server code.png" height="200px" ></image>
+
+        </div>
+        <div id="event">
+            <h2>Responces from the server:-</h2>
+            <image src="Images/Node JS/event cycle.png" height="200px"></image>
+            <image src="Images/Node JS/loop exit.png" height="200px"></image>
+            <image src="Images/Node JS/sending responce.png" height="200px"></image>
+            <image src="Images/Node JS/routing request.png" height="200px"></image>
+            <h4 class="hightlight">We will get this error if we try to add more responce to after res.end(); , So we should use return before res.end();</h4>
+            <image src="Images/Node JS/return keyword.png" height="200px"></image>
+            <h3>taking user's input:- </h3>
+            <image src="Images/Node JS/user input.png" height="200px"></image>
+            <h3>Store this user's data at database:- </h3>
+            <h4>req.method refers to the method tag used in form as method="POST".</h4>
+            <image src="Images/Node JS/store form data.png" height="200px"></image>
+        </div>
+        <div id="parsing">
+            <h2>Parsing request:- </h2>
+            <h3>this is a method that tell how to store a user's input in text file.</h3>
+            <image src="Images/Node JS/user's input reading.png" height="200px"></image>
+            <h3>Here data is reffered as stream.</h3>
+            <image src="Images/Node JS/stream.png" height="200px"></image>
+            <image src="Images/Node JS/streams 2.png" height="200px"></image>
+            <h3>Chunks are the smallest part of streams.</h3>
+            <image src="Images/Node JS/chunks.png" height="200px"></image>
+            <h3>Buffer is used to arrange the chunks according to respective position .</h3>
+            <image src="Images/Node JS/buffer.png" height="200px"></image>
+            <image src="Images/Node JS/reading chunks.png" height="200px"></image>
+            <image src="Images/Node JS/chunk converting.png" height="200px"></image>
+            <h3>When we send data to server,the data goes in chunks (encoded) form . So we have to decode it for correctness(like space and symbols).</h3>
+            <image src="Images/Node JS/decoding.png" height="200px"></image>
+            <h3>Another simple way of writing the  URLSEARCHParams() code.</h3>
+            <image src="Images/Node JS/another way.png" height="200px"></image>
+            <h3>Writing the user entered data to file.</h3>
+            <image src="Images/Node JS/writing data.png" height="200px"></image>
+        </div>
+        <div id="modules">
+            <h2>Modules:- </h2>
+            <image src="Images/Node JS/modules.png" height="200px"></image>
+            <h3 class="hightlight">Here we created two new .js files</h3>
+            <h4>This is server data .</h4>
+            <image src="Images/Node JS/serverjs.png" height="200px"></image>
+            <h4>And this is the file where the modules are stored from server data.</h4>
+            <image src="Images/Node JS/servermodulejs.png" height="200px"></image>
+            <h4>Another way to write module.exports=</h4>
+            <image src="Images/Node JS/export.png" height="200px" ></image>
+            <h4 class="hightlight">But this above method is called named import, so we have to structure the module while defining it. example:- const {extra}=require('/filename');</h4>
+        </div>
+        <div id="eventloop">
+            <h2>Event loop:- </h2>
+            <image src="Images/Node JS/event loop.png" height="200px"></image>
+            <image src="Images/Node JS/thread.png" height="200px"></image>
+            <image src="Images/Node JS/v8 vs libuv.png" height="200px"></image>
+            <image src="Images/Node JS/runtime.png" height="200px"></image>
+            <image src="Images/Node JS/priority.png" height="200px"></image>
+            <h3>Why we should use asyn code:- </h3>
+            <image src="Images/Node JS/asyn code.png" height="200px"></image>
+            <h3>we should not use writeFileSync bcz it is much slower and this blocks everything :- </h3>
+            <image src="Images/Node JS/writefilesync.png" height="200px"></image>
+            <h3 class="hightlight">Instead of writeFileSync use only writeFile:- but in this we have to make a error fxn;-  And it is a Async method:- </h3>
+            <image src="Images/Node JS/writeFile.png" height="200px"></image>
+            <h3>Importent exercise:- </h3>
+            <image src="Images/Node JS/impor.png" height="200px"></image>
+        </div>
+        <div id="npm">
+            <h2>Npm and tools:- </h2>
+            <image src="Images/Node JS/npmedit.png" height="200px"></image>
+            <image src="Images/Node JS/packageinstall.png" height="200px"></image>
+        </div>
+        <div id="debuging">
+            <h2>Errors and Deubuging:- Types of errors</h2>
+            <image src="Images/Node JS/types of error.png" height="200px"></image>
+            <image src="Images/Node JS/runtimeerror.png" height="200px"></image>
+            <image src="Images/Node JS/logicalerror.png" height="200px"></image>
+            <h3>How to use run and debugger in vs code:- </h3>
+            <image src="Images/Node JS/debugger.png" height="200px"></image>
+            <h3>Use of break point in vs code to stop execution of any code at any specific line .</h3>
+            <image src="Images/Node JS/breakpoint.png" height="200px"></image>
+            <h3>Debug console in vs is similar to chrome console where we can run js code..But it is only applicable to async code. </h3>
+            <image src="Images/Node JS/debugconsole.png" height="200px"></image>
+        </div>
+
+
+        
+        
+        <div id="express">
+            <h1 class="hightlight">Express JS</h1>
+            <h2>file created during express learning</h2>
+            <div class="hide" id="itsme">
+                <ol>
+                    <li>server.js</li>
+                    <li>servermodule.js</li>
+                    <li>npmtest.js</li>
+                    <li>npmtestmodle.js</li>
+                    <li>exampleexpress.js</li>
+                    <li>examplecontact.html</li>
+                    <li>examplehome.html</li>
+                    <li>airbnbserver.js</li>
+                    <li>airbnbrouter.js</li>
+                    <li>airbnbform.html
+                    <li>airbnbhtml2.html</li>
+                    <li>airbnbhtml3.html</li>
+                    <li>constroller folder>airbnbregistor.js</li>
+                    <li>Mongo db extension in vs code (optional)</li>
+                    <li>install mongoose in vs code</li>
+                    <li>express session package in vs</li>
+                    <li>connect-mongodb-session in vs</li>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="intro"><h2>Files created during express js..</h2>
+            <image src="Images/Node JS/express js/jsfiles.png" width="100%"></image>
+            <h2>what is express js.</h2>
+            <image src="Images/Node JS/express js/expressjs.png" height="200px"></image>
+            <image src="Images/Node JS/express js/needs.png" height="200px"></image>
+            <h3>this is how we can use express in any nodejs code..</h3>
+            <image src="Images/Node JS/express js/installingcode.png" height="200px"></image>
+            <image src="Images/Node JS/express js/addingmiddleware.png" height="200px"></image>
+            <h3 class="hightlight">use keyword in express js:- To add middlewares...While using 'use' keyword to create a middleware we should use 'next()' to send execution to next middleware.</h3>
+            <image src="Images/Node JS/express js/usekeyword.png" height="200px"></image>
+            <h4>example of next()</h4>
+            <image src="Images/Node JS/express js/next.png" height="200px"></image>
+            <h3>sending responces to user throw middlewares..</h3>
+            <image src="Images/Node JS/express js/responce.png" height="200px" ></image>
+            <image src="Images/Node JS/express js/routes.png" height="200px"></image>
+             <image src="Images/Node JS/express js/handling routes.png" height="200px" ></image>
+            <h4>we can use app.use , app.post , app.get according to the request method type to send the responces.</h4>
+            <image src="Images/Node JS/express js/routes method.png" height="200px"></image>
+            <image src="Images/Node JS/express js/example.png" height="200px"></image>
+            <h3>An example to remember:-Here we are initilizing the variables (username,email,passord) from the data that is entered by user.</h3>
+            <image src="Images/Node JS/express js/to share variables.png" height="200px"></image>
+        </div>
+        <div id="deepdive">
+            <h2>Deepdive into Express js..</h2>
+            <h3>What is parsing request:- <br> When we try to access the user entered data ,it is in chunks form then we concatinate it and convert it into string and then use urlSearchParams to decrypt it.<br>All of this work is done by "body-paser" with a single line of code.</body-paser></h3>
+            <image src="Images/Node JS/express js/body-parser.png" height="200px"></image>
+            <h3>Router is similar to local modules that we created in node js ,through this we can create a different local module for different middleware.</h3>
+            <image src="Images/Node JS/express js/router.png" height="200px"></image>
+            <h3 class="hightlight">Adding a 404 page:-But do it in last middleware bcz we use app.use in it so it will be executed before other middleware which can cause unexpected output page.</h3>
+            <image src="Images/Node JS/express js/404.png" height="200px" ></image>
+            <h3>Handling of Same path Router using (.get and .post).</h3>
+            <image src="Images/Node JS/express js/samepathrouter.png" height="200px"></image>
+            <h2 class="hightlight">---------Adding HTML page to express js---------</h2>
+            <h3>At first create a html file and add this file to express js code using <span class="hightlight">"path module"</span>.(It is a core module) and use <span class="hightlight">res.sendFile </span>to send the responces.</h3>
+            <h3>__dirname points to the current directory.<br>"../" means to back to parent directory.<br>"view" is parent directory name and write the file name you want to send.</h3>
+            <image src="Images/Node JS/express js/serving htmlfile to express.png" height="200px"></image>
+            <image src="Images/Node JS/express js/sendFile.png" height="100vw"></image>
+            <h2>Don't use "next()" after sending the file.</h2>
+            <image src="Images/Node JS/express js/filehelper.png" height="200px" ></image>
+        </div>
+        <div id="tailwind">
+            <h2>Tailwind and CSS</h2>
+            <image src="Images/Node JS/express js/tailwind.png" height="200px"></image>
+            <h2 class="hightlight">serving css file:-</h2>
+            <h3>Step 1. Create a public folder and create a css file inside it.</h3>
+            <image src="Images/Node JS/express js/serving of css file.png" height="200px"></image>
+            <image src="Images/Node JS/express js/serving of css2.png" height="200px"></image>
+            <h3>Step 2. Now add a express.static middleware to server file.</h3>
+            <image src="Images/Node JS/express js/static middleware.png" width="100%"></image>
+            <h3>Step 3. At last link the css file to html,but don't write complete path just write the file name.</h3>
+            <image src="Images/Node JS/express js/link css.png" width="100%" ></image>
+            <h2>Intro to Tailwind</h2>
+            <image src="Images/Node JS/express js/introtailwind.png" height="200px" ></image>
+            
+        </div>
+        <div id="EJS">
+            <h2>EJS(Embedded JavaScript)</h2>
+            <h3> Embedded JavaScript, is a simple and direct template engine that allows you to embed JavaScript code within HTML .</h3>
+            <image src="Images/Node JS/express js/needofejs.png" height="200px"></image>
+            <image src="Images/Node JS/express js/sharing variables.png" height="200px"></image>
+            <h2>What is Ejs</h2>
+            <image src="Images/Node JS/express js/whatejs.png" height="200px"></image>
+            <h3>importing ejs in code.</h3>
+            <image src="Images/Node JS/express js/ejs imoporting.png" height="200px"></image>
+            <image src="Images/Node JS/express js/path set.png" height="200px"></image>
+            <h3 class="hightlight">way of using ejs in html code.</h3>
+            <image src="Images/Node JS/express js/ejs on html.png" height="200px" ></image>
+            <h2>Working with partials.</h2>
+            <h3>It increase the code reusability.</h3>
+            <image src="Images/Node JS/express js/partials.png" height="200px"></image>
+            <h3>how to use partial at html page.</h3>
+            <image src="Images/Node JS/express js/partial2.png" height="200px"></image>
+
+        </div>
+        <div id="mvc">
+            <h2>MVC(Model View Controller)</h2>
+            <image src="Images/Node JS/express js/sepration.png" height="200px"></image>
+            <image src="Images/Node JS/express js/first controller.png" height="200px"></image>
+            <h3>importing all controller form a single js file.</h3>
+            <image src="Images/Node JS/express js/adding all controllers.png" height="200px"></image>
+            <h2>Adding Models</h2>
+            <image src="Images/Node JS/express js/models.png" height="200px"></image>
+            <h2>Writing data to files:- </h2>
+            <image src="Images/Node JS/express js/writingdatatofiles.png" height="200px"></image>
+            <h2 class="hightlight">Fetching data from the files:- </h2>
+            <image src="Images/Node JS/express js/fetchingdata.png" height="200px"></image>
+            <h3>Fetching and displaying data at home page:- </h3>
+            <image src="Images/Node JS/express js/fetching data at home page.png" width="100%"></image>
+            <h3 class="hightlight">Fetching the existing data and add new data:-</h3>
+            <image src="Images/Node JS/express js/adding more data in existing data.png" height="200px"></image>
+            <image src="Images/Node JS/express js/Array.isArray().png" height="200px"></image>
+            <h3>after this you need to do small changes in render:- </h3>
+            <image src="Images/Node JS/express js/passing array to html.png" width="100%"></image>
+            </div>
+            
+
+            <div id="dynamicpath">
+                <h2>Dynamic Path:- </h2>
+                <h3>
+                     <ul>
+                    <li>Path parameters</li>
+                    <li>Query parameters</li>
+                </ul>
+                </h3>
+                <image src="Images/Node JS/express js/what is dynamic path.png" height="200px"></image>
+                <image src="Images/Node JS/express js/task 1.png" height="200px"></image>
+                <h3 class="hightlight">A new way to add variable path href:- </h3>
+                <image src="Images/Node JS/express js/vari path.png" height="200px"></image>
+                <h3>But for above method we have to add id to all the object in database,By using <span class="hightlight">Math.random()</span>function</h3>
+                <image src="Images/Node JS/express js/adding id.png" height="200px"></image>
+                <h2 class="hightlight">Using if stmt and forEach fxn to filter out data:- </h2>
+                <image src="Images/Node JS/express js/if condition in details page.png" height="300px"></image>
+                <h2>Login details :- </h2>
+                <image src="Images/Node JS/express js/login-content.png" width="50%"></image>
+                <h3>fav page details:- </h3>
+                <image src="Images/Node JS/express js/changes in fav.png" height="200px"></image>
+                <h3>Changes in router:-</h3>
+                <image src="Images/Node JS/express js/router fav changes.png" height="200px"></image>
+                <image src="Images/Node JS/express js/2nd router of fav page.png" height="200px"></image>
+                <h3>Login first condition in fav page,Similar in add home page and booking page..</h3>
+                <image src="Images/Node JS/express js/login  firstcondition in fav page .png" height="200px"></image>
+                <h3>exporting login variable to use it in another another router.But after importing the variable update the path of file which 
+                    you are sending, if required.
+                </h3>
+                <image src="Images/Node JS/express js/exporting login variable.png" height="200px"></image>
+                <image src="Images/Node JS/express js/changes in another router.png" height="200px"></image>
+                <h2 class="hightlight">Keyword:-</h2>
+                <image src="Images/Node JS/express js/some keywords.png" height="200px"></image>
+                <h3 class="hightlight">Instead of fetching all the data again from data base to send to ejs file we can use redirect keyword to any specific path. </h3>
+                <image src="Images/Node JS/express js/redirect keyword.png" width="100%"></image>
+                <image src="Images/Node JS/express js/include keyword.png" width="100%"></image>
+                <h2 class="hightlight">Part 2:- </h2>
+                <image src="Images/Node JS/express js/part 2.png" height="200px"></image>
+                <h3 class="hightlight">Note:- Query parameter is not a part of path so ,no need to write in middleware path.</h3>
+                <image src="Images/Node JS/express js/query parameter.png" width="100%"></image>
+                <h3>always keep in mind:- </h3>
+                <image src="Images/Node JS/express js/: for id.png" widt="100%"></image>
+                <h3>Handling of query parameter:- here editing variable is a string not a boolean so we are doing ===true to compare it with boolean value(true).</h3>
+                <image src="Images/Node JS/express js/handling query parameter.png" height="200px"></image>
+                <h1 class="hightlight">Place Editing middlewares</h1>
+                <h2>editing middleware for entring data:-</h2>
+                <image src="Images/Node JS/express js/entring data to edit.png" height="200px"></image>
+                <h3>we can also use the same ejs page for editing throung query parameter (editing===true) like this:- </h3>
+                <image src="Images/Node JS/express js/addhome:edithomes.png" height="300px"></image>
+                <h1 class="hightlight">This is the middleware which is updating the existing data in database:-</h1>
+                <image src="Images/Node JS/express js/final updating the data.png" width="100%"></image>
+                <image src="Images/Node JS/express js/final updating the data 2.png" width="100%"></image>
+                <h1 class="hightlight">Place Deleting middlewares:-</h1>
+                <h3>Button creation..</h3>
+                <image src="Images/Node JS/express js/del button.png" width="100%"></image>
+                <h2 class="hightlight">while performing any operation which change the state of system(when we submit something) we should use post method.</h2>
+                <image src="Images/Node JS/express js/del tasks.png" height="200px"></image>
+                <h2>We will use <span class="hightlight">.filter()</span> mehod to delete place:- The Array.prototype.filter() method creates a new array containing all elements that pass a condition.</h2>
+                <h3 class="hightlight">how to use .filter():- it returns the boolean values.it store the value when ouput is true otherwise delete them.</h3>
+                <image src="Images/Node JS/express js/filter del middleware.png" width="100%"></image>
+                <h3>similar for favpage </h3>
+                <image src="Images/Node JS/express js/favpage deletion middleware.png" height="300px"></image>
+                <h1 class="hightlight">Note:- Always use parseFloat() while fetching any id/numerical value from path , and then we can use '===' to compare.</h1></h>
+
+            </div>
+            <div id="SQL">
+                <h1 class="hightlight">Intro to SQL(Structured query language)</h1>
+                <image src="Images/Node JS/express js/SQL/sql intro.png" width="70%"></image>
+                <image src="Images/Node JS/express js/SQL/info sql.png" height="200px"></image>
+                <image src="Images/Node JS/express js/SQL/sql info 3.png" height="200px"></image>
+                <h3>NO SQL:-</h3>
+                <image src="Images/Node JS/express js/SQL/not only sql.png" height="200px"></image>
+                <image src="Images/Node JS/express js/SQL/sql vs nosql.png" height="200px"></image>
+                <image src="Images/Node JS/express js/SQL/sql vs nosql2.png" height="200px"></image>
+                <h2>Password of server is :- <span class="hightlight">sqlserver01</span></h2>
+                <h3>step 1: Now create a new schema.</h3>
+                <h3>step 2: install mysql2 package in vs to connect the sql with js .</h3>
+                <image src="Images/Node JS/express js/SQL/connection bw sql and js.png" height="300px"></image>
+                <h3>Step 3: Connecting Essientials:- this is a util for connecting sql with js.Always use<span class="hightlight"> .promise() </span>while exporting.</h3>
+                <image src="Images/Node JS/express js/SQL/connecting sql.png" height="200px"></image>
+                <h3><span class="hightlight">Step 4:</span> Now create a table in mysql</h3>
+                <h3>While creating a table we have to define the datatype of the variables and type of keys.And these keys are:</h3>
+                <image src="Images/Node JS/express js/SQL/keys.png" height="200px"></image>
+                <h3>Table creation:- </h3>
+                <image src="Images/Node JS/express js/SQL/table creation.png" height="200px"></image>
+                <h2>Example how to use sql database in express js.</h2>
+                <image src="Images/Node JS/express js/SQL/using sql database.png" height="200px"></image>
+                <h3>Files that contains the example code:- <span class="hightlight">z.js and zrouter.js</span></h3>
+                <h2 class="hightlight" >we should array destructuring while accessing the data from sql database.</h2>
+                <image src="Images/Node JS/express js/SQL/array destructuring.png" width="70%"></image>
+                <h2 class="hightlight">Making a router and a static function in a class to fetch data in different middleware.</h2>
+                <image src="Images/Node JS/express js/SQL/making a router and a class(static fxn) for fetching data.png" height="400px"></image>
+                <h2>After above we have to require that model and then we can use that static fxn like this:-</h2>
+                <image src="Images/Node JS/express js/SQL/fetching data using static fxn.png" width="50%"></image>
+                <h1 class="hightlight">Writing data to SQL database</h1>
+                <image src="Images/Node JS/express js/SQL/data writing fxn .png" width="100%"></image>
+                <h3>Using savetohome fxn for saving data in sql database.</h3>
+                <image src="Images/Node JS/express js/SQL/writing data to database with savetohome  fxn .png" height="300px"></image>
+                <h3>We have created <span class="hightlight">4 fxns and 2 pools </span>for data handling like fetching and writing data to databases.</h3>
+                <h4>Pools:- </h4>
+                <image src="Images/Node JS/express js/SQL/2 pools.png" height="200px"></image>
+                <h4>4 fxns:-</h4>
+                <image src="Images/Node JS/express js/SQL/4 fxn for data handling.png" height="200px"></image>
+                <h3>use of favsave fxn:- </h3>
+                <image src="Images/Node JS/express js/SQL/use of favsave fxn.png" height="200px"></image>
+                <h3 class="hightlight">Two more importent fxns findbyid and delete:-</h3>
+                <image src="Images/Node JS/express js/SQL/del and find fxn.png" height="200xp"></image>
+                <h3>For finding and deleting data from two database(fav ,home) we created 4 new fxns:-</h3>
+                <image src="Images/Node JS/express js/SQL/4 new find and del fxns.png" height="200px"></image>
+                <h3>Use of findfromfav fxn:-</h3></h4>
+                <image src="Images/Node JS/express js/SQL/use of findfromfav.png" width="50%"></image>
+                <h1 class="=hightlight" >important:- </h1>
+                <h3>using <span class="hightlight">async </span> with (req,res,next) fxn and await with <span class="hightlight">static fxn</span> so that code will wait for data fetching from database by async fxns.</h3>
+                <image src="Images/Node JS/express js/SQL/use of await in async fxns.png" width="70%"></image> 
+                <h2>Changes maded in home editing page</h2>
+                <h3><pre>
+                    Using forEach with res.render
+
+Problem: Calling res.render inside a forEach can cause multiple responses, leading to continuous loading or errors.
+
+Fix: Use Array.find() or for...of to locate the item and send the response once.
+
+Incorrect comparison of query parameters
+
+Problem: req.query.editing is a string, so comparing with true (boolean) fails.
+
+Fix: Compare with string: req.query.editing === 'true'.
+
+Using .length on object returned by .find()
+
+Problem: .find() returns a single object or undefined, not an array. Using .length will always fail and the route hangs.
+
+Fix: Check if the object exists: if (itemfound) { ... }.
+
+Sending wrong data to the template
+
+Problem: Sending [data] sends the whole array instead of the single item.
+
+Fix: Send [itemfound] to the template.
+
+Good practices
+
+Always send a response, even if the item is not found.
+
+Wrap await calls in try...catch.
+
+Avoid multiple res.render or res.send calls.
+
+Check data types before comparison.
+
+Corrected route example
+
+Use find() to get the item.
+
+Check if item exists.
+
+Send only that item to the template.
+
+Handle errors and login checks properly.
+                </pre></h3>               
+                <image src="Images/Node JS/express js/SQL/changes in favedit page.png" width="50%"></image>
+                <h1 class="hightlight" >Note:-</h1>
+                <h2>while pushing data to fav database ,push data with id so that the id in fav database and id in home database will stay same. </h2>
+                <h2>Always use backticks while constructing a writing fxn for database <span class="hightlight">``</span> .</h2>
+                <h3>Changes in del home middleware:-</h3>
+                <image src="Images/Node JS/express js/SQL/changes in del home middleware.png" height="400px"></image>
+                <h2 class="hightlight">New fxn for upadating data in home database:-</h2>
+                <image src="Images/Node JS/express js/SQL/new fxn for updation.png" width="100%"></image>
+                <h2 class="hightlight">my updating fxn:-</h2>
+                <image src="Images/Node JS/express js/SQL/updating fxn.png" width="100%"></image>
+                <h2>Value passing to above fxn:-</h2>
+                <image src="Images/Node JS/express js/SQL/value pass to upadating.png" height="400px"></image>
+               
+            </div>
+
+            <div id="mongodb">
+                <h1 class="hightlight">Intro to MONGO db</h1>
+                <h3><pre>
+    Description:
+
+        MongoDB Atlas is a cloud-hosted version of MongoDB provided by MongoDB, Inc.
+
+        It automatically handles infrastructure, scaling, backups, monitoring, and security.
+
+        You don’t need to install MongoDB on your local machine or server — Atlas runs on AWS, Google Cloud, or Azure.
+
+    Key Features:
+
+        🧩 No setup required — you just create a cluster online.
+
+        ☁️ Fully managed by MongoDB (automatic backups, upgrades, patching).
+
+        📊 Built-in monitoring dashboard.
+
+        🔒 Advanced security features (encryption, IP whitelist, etc.).
+
+        🌍 Easy to connect from anywhere (great for teams or production).
+
+        💰 Free tier available, but larger clusters cost money.
+
+    Use Case:
+
+        Best for production apps, teams, or when you want cloud scalability without managing servers.
+
+🟠 MongoDB Community Server 
+
+    Type: Self-hosted (Manual Setup)
+
+    Description:
+
+        MongoDB Community Server is the free, open-source edition of MongoDB.
+
+        You install it yourself on your local machine or your own server.
+
+        You are responsible for maintenance, security, scaling, and backups.
+
+    Key Features:
+
+        💻 Installed locally or on your own cloud server (manual control).
+
+         🔧 You manage all configuration, upgrades, and scaling.
+
+         🆓 Completely free and open source.
+
+        ⚙️ Suitable for local development and testing.
+
+    Use Case:
+
+        Best for learning, development, or small self-managed projects.
+                </pre></h3>
+                 <image src="Images/Node JS/express js/MONGO/mongo intro.png" height="400px"></image>
+                 <image src="Images/Node JS/express js/MONGO/what is mongo.png" height="400px"></image>
+                 <h2>Create a ATLAS account through these settings:- and install mongodb in your vs code.</h2>
+                 <image src="Images/Node JS/express js/MONGO/atlas account setting.png" height="300px"></image>
+                 <h2>String to connect database to code</h2>
+                 <image src="Images/Node JS/express js/MONGO/string to connect.png" height="200px"></image>
+                 <h2>If facing any issue with local connection of mongo db with code then check in network connection and database access in atlas.</h2>
+                 <image src="Images/Node JS/express js/MONGO/connection.png" height="300px"></image>
+                 <h2 class="hightlight">While connecting to mongo db do these thins:- </h2>
+                    <ul>
+                        <li>Resolve your dns server that is restricting your connection.</li>
+                        <li>while pasting your connecting string replace your actual password and cluster name correctly.</li>
+                    </ul>
+                 <h3>utility for connecting mongodb </h3>
+                 <image src="Images/Node JS/express js/MONGO/utility for connecting mongo db.png" height="300px"> </image>
+                 <h3>Connecting to a mongo database depand upon various step but selecting a optimal network (a wifi,mobile network can cause errors like handshake of tsl and ssl .)is main step.</h3>
+                 <h2 class="hightlight" >Module created for connecting to mongo db:- </h2>
+                 <image src="Images/Node JS/express js/MONGO/connecting module.png" width="60%"></image>
+                 <h2>After importing the module you can use it like this:- </h2>
+                 <image src="Images/Node JS/express js/MONGO/use of connecting moudle.png" width="60%"></image>
+                 <h2>We will use a variable _db to connect to a specific database in atlas  and return some object . </h2>
+                 <h2>We have to create a fxn for this variable to use it again and again.</h2>
+                 <h2>we also removed named exporting. As you can see</h2>
+                 <image src="Images/Node JS/express js/MONGO/changes  in connecting module.png" width="60%"></image>
+                 <h3>Some minor changes in airbnbserver.js file while listning to the server</h3>
+                 <image src="Images/Node JS/express js/MONGO/changes in server establishment.png" width="60%"></image>
+                 <h3><span class="hightlight" >**MongoDB Compass** </span>is a **graphical user interface (GUI)** tool for MongoDB that lets you **view, explore, 
+                    and manage your databases** without writing complex commands. It helps visualize collections, run queries, and 
+                    analyze data easily.</h3>
+                 <h2 class="hightlight">Static fxns:-</h2>
+                 <h3>save fxn</h3>
+                 <image src="Images/Node JS/express js/MONGO/created a static save fxn to insert data into mongodatabase.png" width="50%"></image>
+                 <h3>fetchhome fxn</h3>
+                 <image src="Images/Node JS/express js/MONGO/fetch fxn format.png" width="40%" ></image>
+                 <h2><span class="hightlight" >.find()</span> = It returns a cursor .We can also use any creatria in it.</h2>
+                 <image src="Images/Node JS/express js/MONGO/fetch_home.png" width="60%"></image>
+                 <h3>Use of fetch_home fxn:- </h3>
+                  <image src="Images/Node JS/express js/MONGO/fetch_home use.png" width="60%"></image>
+                  <h2>Changes maded in add home router:- </h2>
+                  <image src="Images/Node JS/express js/MONGO/add home router changes.png" width="60%"></image>
+                  <h2 class="hightlight"> Fetch home by _id fxn,In this we will use .next() in place of .toArray() and it return a single object,so no use of forEach fxn in ejs :-</h2>
+                  <image src="Images/Node JS/express js/MONGO/fetch home by id.png" width="50%"></image>
+                  <h3>My find_byid fxn </h3>
+                  <image src="Images/Node JS/express js/MONGO/find_byid fxn.png" width="50%"></image>
+                  <h2 class="hightlight">This find_byid returns a single object so we can't use forEach in ejs hence we should use direct airbnbserdata.Name etc.</h2>
+                  <image src="Images/Node JS/express js/MONGO/ejs changes.png" height="300px"></image>
+                  <h3>use of find_byid fxn</h3>
+                  <image src="Images/Node JS/express js/MONGO/use fo find_byid fxn.png" width="50%"></image>
+                  <h2>Created two new fxns for fav data handling:-<span class="hightlight">Important things in this picture:- </span></h2>
+                  <image src="Images/Node JS/express js/MONGO/all fxns.png" height="500px"></image>
+                  <h3>use of fav fxns:-</h3>
+                  <image src="Images/Node JS/express js/MONGO/use of fav fxns.png" height="300px"></image>
+                  <h3>Created a new static fxn to fetch fav data:-</h3>
+                  <image src="Images/Node JS/express js/MONGO/new fxn.png" width="40%"></image>
+                  <h3>Use of new fxn:-</h3>
+                  <image src="Images/Node JS/express js/MONGO//:favpage.png" width="40%" ></image>
+                  <h2 class="hightlight">Update and delete fxns:-</h2>
+                  <image src="Images/Node JS/express js/MONGO/update and del fxn.png" width="50%"></image>
+                  <h3>my del fxn and its use:- </h3>
+                  <image src="Images/Node JS/express js/MONGO/del fxns.png" width="50%"></image>
+                  <image src="Images/Node JS/express js/MONGO/use of del fxn.png" width="50%"></image>
+                  <h2 class="hightlight" >Never use parseFloat while fetching homeid bcz mongo has a 24 byte string format id so comparision will not be possible.</h2>
+                  <image src="Images/Node JS/express js/MONGO/use of del fxn 2.png" width="50%"></image>
+                  <h2>New updatehome fxn:- </h2>
+                  <image src="Images/Node JS/express js/MONGO/updating static fxn.png" width="50%"></image>
+                  <h3>use of updatehome fxn:-</h3>
+                  <image src="Images/Node JS/express js/MONGO/use of updathome fxn.png" width="50%"></image>
+                  <h2 class="hightlight">Important:-</h2>
+                  <h3>while using find_byid fxn or similar fxn where fxn is returning a cursor then we should not use forEach fxn in ejs.Use of forEach will give an error bcz the data sent by the fxn is a single object (cursor).</h3>
+                  <image src="Images/Node JS/express js/MONGO/change in ejs while editing data.png" width="50%"></image>
+                  <h2 class="hightlight" >While fetching data using static fxn to compare it with other data then, always use async await bcz the static fxn goes under waiting process and the excution goes to next line leading to incorrect or null data comparison.</h2>
+                  <image src="Images/Node JS/express js/MONGO/example of async and await in fav adding data middleware.png" width="50%"></image>
+            </div>
+            <div id="mongooes">
+                <h1 class="hightlight" >Intro to MONGOOES</h1>
+                <image src="Images/Node JS/express js/MONGO/intro to mongoose.png" height="200px"></image>
+                <image src="Images/Node JS/express js/MONGO/p1.png" height="200px"></image>
+                <h3>Setting up mongoose:-</h3>
+                <image src="Images/Node JS/express js/MONGO/setup of mongoose.png" height="200px"></image>
+                <h3>Format for using mongoose in code:- </h3>
+                <image src="Images/Node JS/express js/MONGO/using mongoose format in code.png" width="40%"></image>
+                <h2>Using MONGOOSE in my code :-</h2>
+                <h3>Step 1:Insert the mongoose library in main module from where .listen is present(the module from where the server is starting).</h3>
+                <image src="Images/Node JS/express js/MONGO/using mongoose p1.png" width="70%"></image>
+                <h3>While using connecting_url we have to add the name of database that will be in mongogb(atlas db) after mongodb.net:- </h3>
+                <image src="Images/Node JS/express js/MONGO/connecting_url example with db name.png" width="50%"></image>
+                <h3>Now use mongoose to connect to atlas/mongo db:-</h3>
+                <image src="Images/Node JS/express js/MONGO/connecting to mongo p2.png" width="40%"></image>
+                <h3>Remove all the mongo db fxns and util files if connected or inserted.</h3>
+                <h3>Format for creating new schema for home using mongoose but remove the existing data from database(mongo db).</h3>
+                <image src="Images/Node JS/express js/MONGO/Schema for home.png" width="30%"></image>
+            </div>
+            <div id="cookies">
+                <h1>Cookies and Sessions</h1>
+                <image src="Images/Node JS/express js/MONGO/cookies and sessions.png" height="200px"></image>
+                <image src="Images/Node JS/express js/MONGO/intro cookies.png" height="200px"></image>
+                <image src="Images/Node JS/express js/MONGO/task 1.png" height="200px"></image>
+                <image src="Images/Node JS/express js/MONGO/task 2 check login in ejs.png" height="200px"></image>
+                <h2>Important</h2>
+                <image src="Images/Node JS/express js/MONGO/task 3 setting a cooky.png" height="200px"></image>
+                <h2>Setting a cookie for login_final:</h2>
+                <image src="Images/Node JS/express js/MONGO/setting method.png" height="200px"></image>
+                <pre>Step-by-step:
+
+req.get('cookie')
+
+This tries to get the cookie header from the incoming HTTP request.
+
+Example:
+If your browser sent this header —
+
+cookie: login=true
+
+
+then
+
+req.get('cookie')  // returns "login=true"
+
+
+?.split('=')[1]
+
+The ?. is the optional chaining operator — it prevents errors if req.get('cookie') is undefined.
+
+.split('=') splits the string by "=".
+Example:
+
+"login=true".split('=')  // ["login", "true"]
+
+
+[1] gives the second part, so "true".
+
+=== true
+
+Here’s the key issue ❗
+"true" (a string) is not equal to true (a boolean).
+So this comparison will always be false.
+
+|| false
+
+This means “if the left side is falsy, use false”.
+
+Since the left side will be false, the entire expression becomes false.
+
+✅ So:
+
+req.login_final = false;
+
+
+…no matter what’s in the cookie, because "true" === true is false.</pre>
+                <image src="Images/Node JS/express js/MONGO/set cookies.png" height="200px"></image>
+                <h2 class="hightlight">This middleware should be executed first when server starts bcz it used to store the cookies in variable that are stored in browser</h2>
+                <image src="Images/Node JS/express js/MONGO/middleware for using cookie.png" height="200px"></image>
+                <h2>here [1] means the value of login_final variable. Example:- "login_final=true" returns true.</h2>
+                <image src="Images/Node JS/express js/MONGO/logout.png" height="200px"></image>
+                <image src="Images/Node JS/express js/MONGO/logout middleware.png" height="200px"></image>
+                <h3 class="hightlight">Problems in Cookies:</h3>
+                <image src="Images/Node JS/express js/MONGO/problems.png" height="200px"></image>
+                <h1>Sessions</h1>
+                <image src="Images/Node JS/express js/MONGO/Session intro.png" height="200px"></image>
+                <h3>package:</h3>
+                <image src="Images/Node JS/express js/MONGO/Session package.png" height="200px"></image>
+                <h3>steps for installing and using:</h3>
+                <image src="Images/Node JS/express js/MONGO/installing steps.png" height="200px"></image>
+                <h3 class="hightlight">express-session is a express library.</h3>
+                <image src="Images/Node JS/express js/MONGO/use session.png" height="200px"></image> 
+                <h2>Always use session middleware as first middleware of your project:</h2> 
+                <image src="Images/Node JS/express js/MONGO/creating session on server.png" height="200px"></image>
+                <h3>Use of session in logindone middleware:</h3>
+                <image src="Images/Node JS/express js/MONGO/use of session.png" height="200px"></image>
+                <h2>Saving sessions in mongodb for storing session permanently.</h2>
+                <image src="Images/Node JS/express js/MONGO/task 4.png" height="300px"></image>
+            </div>
+
+
+        <script src="nodejsNotes.js"></script>
+</body>
+</html> 

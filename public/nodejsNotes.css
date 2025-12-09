@@ -1,0 +1,259 @@
+*{
+  color:white;
+  padding:0px;
+  box-sizing: border-box;
+}
+body{
+                background-color:	#FAF3DD;
+                margin:0%;
+                padding:0%;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                transition: all 0.3s ease;
+                animation-name:pageload;
+                animation-duration: 1s;
+            }
+            @keyframes pageload{
+                from{
+                    opacity: 0;
+                    filter: blur(10px);
+                }
+                to{
+                    opacity: 1;
+                    filter:blur(0px);
+                }
+            }
+            a{
+                text-decoration-line: none;
+                color:black;
+            
+            }
+           
+               .navi{ 
+                 
+                 border:1px solid #FFA69E;
+                background-color: #FFA69E;               
+                color:white;
+            }
+            .outer{
+                display:flex;
+                justify-content: space-between;
+            }
+           
+           .logo{
+               padding:10px;
+                font-weight: bold; 
+                background-color: white;  
+                margin: 20px;       
+                 border:1px solid white;
+                border-radius: 0.4rem 
+           }
+           .logo:hover{
+                transform: scale(1.1);
+                transition: all 0.3s ease;
+                background-color: #ffa69eaa;
+                border-color: #ffa69eaa;
+           }
+          
+            .lis{
+                list-style-type:none;
+                
+                 padding-right: 20px;
+                display:flex;
+                gap:30px;
+                color:white;
+               
+                
+            }
+            .lis>li{
+                font-weight: bold;
+                padding:2px;
+                border:1px solid white;
+                border-radius: 0.4rem;
+                background-color: white;
+                max-height: fit-content;
+            }
+            .lis>li:hover{
+                transform: scale(1.1);
+                transition: all 0.3s ease;
+                background-color: #ffa69eaa;
+                border-color: #ffa69eaa;
+            }
+            h1{
+                color:white;
+                border:2px solid #FFA69E;
+                border-radius: 0.9rem;
+                margin-left: 10px;
+                margin-right: 10px;
+                padding:5px;
+                text-align: center;
+                background-color: #FFA69E;
+                margin-bottom: 10px;
+                font-family: "Anton", sans-serif;
+            }
+            #but{
+                text-align: center;
+            }
+            #butt{
+                border-radius: 0.9rem;
+                background-color: white;
+                transition:all 0.3s ease;
+            }
+            #butt:hover{
+                
+                color:aquamarine;
+                transform:scale(1.1);
+                background-color:#ffa69e54;
+                cursor: pointer;
+
+            } 
+            .noth{
+              margin:10px;
+                padding:2rem;
+                border:1px solid #FFA69E;
+                border-radius: 1rem;
+                background-color: #FFA69E;
+                color:white;
+            }
+            .second{
+                margin:10px;
+                padding:2rem;
+                border:1px solid #FFA69E;
+                border-radius: 1rem;
+                background-color: #FFA69E;
+                color:white;
+            }
+            #tex{
+                margin:20px;
+                text-transform: capitalize;
+                text-decoration: line-through;
+                text-decoration-line: underline;
+                text-decoration-style: wavy;
+                text-decoration-color: black;
+                text-shadow: 3px 5px 4px #FFA69E;
+            } 
+#Hero{
+  background-color: #FFA69E;
+  border:1px solid #FFA69E;
+  color:white;
+  border-radius: 0.8rem;
+  margin:20px;
+  text-align: center;
+  text-shadow: 1.2px 1.2px 4px black;
+}
+#sql{
+  position:fixed;
+ top:42%;
+ right:20px;
+}
+#mongo{
+  position:fixed;
+ top:45%;
+ right:20px;
+}
+#placer{
+  position:fixed;
+  right:20px;
+  top: 40%;
+}
+.fix{
+  position:fixed;
+ right:10px;
+}
+#unhider{
+ position:fixed;
+ top:38%;
+ right:20px;
+ padding:4px;
+ border-radius: 50%;
+ font-size: larger;
+ border:1px solid #FFA69E;
+ box-shadow: 1.5px 1.5px 5px #FFA69E;
+ transition:all 0.3s ease-in-out;
+ cursor: pointer;
+
+
+}
+#unhider:hover{
+  transform:scale(1.2);
+}
+.hided{
+  margin:0px;
+  padding:0px;
+  width:0px;
+  height:0px;
+  overflow: hidden;
+}
+#hided>h2{
+  color:black;
+}
+#hided>ul>li{
+  list-style: none;
+  color:black;
+}
+.unhided{
+  background-color: #ffffffc6;
+  border:1px solid #FFA69E;
+   animation-name: present;
+ animation-timing-function: linear;
+ animation-timing-function: 1s;
+ animation-direction: normal;
+ animation-duration: 1s;
+}
+h2{
+  text-decoration-line:underline ;
+  text-decoration-style:dashed ;
+}
+#example,#repl,#server,#servercode,#event,#parsing,#modules,#eventloop,#npm,#debuging{
+  background-color: #FFA69E;
+  border:1px solid #FFA69E;
+  border-radius: 0.8rem;
+  margin:20px;
+  padding:10px; 
+  gap:10px;
+}
+
+.hightlight{
+   animation:highlight;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+@keyframes highlight{
+  from{
+    color: rgb(0, 242, 255);
+    text-shadow: 1.2px 1.2px 4px black;
+  }
+  to{
+    color: rgb(251, 255, 0);
+    text-shadow: 1.2px 1.2px 4px red;
+  }
+}
+@keyframes present{
+  from{
+    transform:rotate(90deg);
+    transform-origin: right;
+    
+  }
+  to{
+    transform:rotate(0);
+    transform-origin: right;
+  }
+}
+#express,#intro,#deepdive,#tailwind,#EJS,#mvc,#dynamicpath,#SQL,#mongodb,#mongooes,#cookies{ 
+ background-color: #FFA69E;
+  border:1px solid #FFA69E;
+  border-radius: 0.8rem;
+  margin:20px;
+  padding:10px; 
+  gap:10px;
+} 
+
+#sql,#mongo{
+  border:1px solid #FFA69E;
+  background-color: #ffffff50;
+  backdrop-filter: blur(5px);
+  padding:5px;
+  border-radius: 0.4rem;
+  margin:5px;
+}
